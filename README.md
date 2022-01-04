@@ -6,3 +6,5 @@
 <img src="screenshots/SimulatorScreenShot2.png" width="240" height="500">
 
 <img src="screenshots/SimulatorScreenShot3.png" width="240" height="500">
+
+<img src="screenshots/patternTest.gif" width="240" height="500">
