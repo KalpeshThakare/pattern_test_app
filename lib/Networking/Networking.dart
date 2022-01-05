@@ -2,13 +2,16 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:pattern_test_app/ModalClass/shift_data_list.dart';
 
+
+final String shiftList_url = 'https://099f998e-8348-4d04-83b6-891462df8f52.mock.pstmn.io/shifts';
+
 class Networking {
 
   List<ShiftDataList> finalShiftList = <ShiftDataList>[];
 
-  Future<List<ShiftDataList>> getData() async {
+  Future<List<ShiftDataList>> getData(String api_url) async {
 
-    Uri url = Uri.parse('https://099f998e-8348-4d04-83b6-891462df8f52.mock.pstmn.io/shifts');
+    Uri url = Uri.parse(api_url);
 
     http.Response response = await http.get(url);
 
@@ -25,7 +28,8 @@ class Networking {
           : <ShiftDataList>[];
 
       return finalShiftList;
-    } else {
+    }
+    else {
       print(response.statusCode);
       return <ShiftDataList>[];
     }

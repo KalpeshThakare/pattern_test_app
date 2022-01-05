@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pattern_test_app/ModalClass/shift_data_list.dart';
 import 'package:intl/intl.dart';
-import 'package:pattern_test_app/Shifts/shift_list.dart';
+import 'package:pattern_test_app/ShiftList/shift_list.dart';
 
 class ShiftDetails extends StatelessWidget {
 
